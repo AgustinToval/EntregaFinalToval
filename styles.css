@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 header {
     background-color: rgb(140, 36, 36);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -39,8 +38,14 @@ header {
     text-decoration: none;
 }
 
+.logo a:hover {
+    color: rgb(252, 211, 7);
+    text-shadow: 2px 2px 5px #ffffff;
+    text-decoration: solid #334;
+}
+
 .bar {
-    float: right
+    float: right;
 }
 
 .bar ul {
@@ -51,7 +56,6 @@ header {
 .bar ul li {
     list-style: none;
     display: inline-block;
-
 }
 
 .bar ul li a {
@@ -63,11 +67,29 @@ header {
 .bar a:hover {
     color: rgb(252, 211, 7);
     text-shadow: 2px 2px 5px #ffffff;
-    text-decoration: solid #334
+    text-decoration: solid #334;
+}
+
+.imagen_premium {
+    width: 45%;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    border: 10px solid rgb(208, 208, 8);
+    border-radius: 20px;
+}
+
+.centrado {
+    margin: auto;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .fondo_premium::before {
-    content: '';
+    content: "";
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -79,12 +101,11 @@ header {
     height: 100%;
     width: 100%;
     background-size: cover;
-    padding: 5%;
     z-index: -1;
 }
 
 .fondo_contacto::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -99,17 +120,29 @@ header {
     z-index: -1;
 }
 
-
 .imagenes_contacto {
     display: inline-block;
-    width: 200px;
     margin: 0;
     padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imagen_contacto {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .imagen_contacto img {
     display: inline-block;
-    border: 1px solid black;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
 }
 
 #contacto {
@@ -134,11 +167,10 @@ header {
 
 .fondo_nosotros {
     display: flex;
-
 }
 
 .fondo_nosotros::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -158,7 +190,7 @@ header {
     float: calc(100vh - 80px);
     text-align: center;
     font-family: Alfa Slab One;
-    margin: 0
+    margin: 0;
 }
 
 .contenedor_mision {
@@ -180,7 +212,7 @@ header {
 }
 
 #cocteles::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -203,6 +235,23 @@ header {
     display: inline-flex;
     padding: 2px;
     margin: 20px;
+}
+
+.coctel_foto_bloqueada {
+    border: 5px solid black;
+    max-width: 200px;
+    max-height: 200px;
+    display: inline-flex;
+    padding: 2px;
+    margin: 20px;
+    filter: blur(6px);
+}
+
+.bloqueado {
+    position: absolute;
+    width: 10%;
+    justify-content: center;
+    display: flex;
 }
 
 .nombre_coctel {
@@ -269,6 +318,15 @@ header {
     flex-direction: row;
 }
 
+.titulo_contacto {
+    text-align: center;
+    font-family: Alfa Slab One;
+    padding-top: 25px;
+    color: rgb(140, 36, 36);
+    font-style: oblique;
+    font-size: 40px;
+}
+
 #principal {
     height: calc(100vh - 80px);
     width: 100%;
@@ -284,7 +342,6 @@ header {
     font-size: 90px;
     font-family: Neonderthaw;
     color: rgb(255, 0, 0);
-
 }
 
 #principal div h1 span {
@@ -338,12 +395,14 @@ footer {
     text-transform: capitalize;
     padding: 20px;
     height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer p {
     float: left;
     font-size: 20px;
-    margin-bottom: 30px;
     color: rgba(245, 245, 245, 0.66);
     height: fit-content;
 }
