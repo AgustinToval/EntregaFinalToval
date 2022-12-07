@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: rgb(140, 36, 36);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 22px;
+    height: 80px;
+    padding: 20px;
+    border-bottom: solid black;
+}
+
+.imglogo {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.logo {
+    text-transform: capitalize bold;
+    float: left;
+    font-weight: lighter;
+    color: yellow;
+    font-size: 35px;
+    font-family: Alfa Slab One;
+    display: flex;
+    align-items: center;
+    flex-direction: none;
+}
+
+.logo a {
+    color: rgb(215, 182, 12);
+    text-decoration: none;
+}
+
+.bar {
+    float: right
+}
+
+.bar ul {
+    margin: 7px 0 0 0;
+    letter-spacing: 1px;
+}
+
+.bar ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.bar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.bar a:hover {
+    color: rgb(252, 211, 7);
+    text-shadow: 2px 2px 5px #ffffff;
+    text-decoration: solid #334
+}
+
+.fondo_premium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background-image: url(img/fondo-cocteles.jpg);
+    color: #333;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    padding: 5%;
+    z-index: -1;
+}
+
+.fondo_contacto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background-image: url(img/fondo-cocteles.jpg);
+    color: #333;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.imagenes_contacto {
+    display: inline-block;
+    width: 200px;
+    margin: 0;
+    padding-top: 35px;
+}
+
+.imagen_contacto img {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#contacto {
+    position: relative;
+}
+
+#premium {
+    position: relative;
+}
+
+#nosotros {
+    position: relative;
+}
+
+.fondo_premium {
+    display: flex;
+}
+
+.fondo_contacto {
+    display: flex;
+}
+
+.fondo_nosotros {
+    display: flex;
+
+}
+
+.fondo_nosotros::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background-image: url(img/fondo-cocteles.jpg);
+    color: #333;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.contenedor_vision {
+    color: rgb(0, 0, 0);
+    float: calc(100vh - 80px);
+    text-align: center;
+    font-family: Alfa Slab One;
+    margin: 0
+}
+
+.contenedor_mision {
+    color: rgb(0, 0, 0);
+    float: calc(100vh - 80px);
+    text-align: center;
+    font-family: Alfa Slab One;
+}
+
+.caja_uno {
+    display: inline-block;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Alfa Slab One;
+}
+
+#cocteles {
+    position: relative;
+}
+
+#cocteles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background-image: url(img/fondo-cocteles.jpg);
+    color: #333;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    padding: 5%;
+    z-index: -1;
+}
+
+.coctel_foto {
+    border: 5px solid black;
+    max-width: 200px;
+    max-height: 200px;
+    display: inline-flex;
+    padding: 2px;
+    margin: 20px;
+}
+
+.nombre_coctel {
+    font-size: 25px;
+    font-family: Alfa Slab One;
+    display: flex;
+    padding-top: 0px;
+}
+
+.caja {
+    padding-top: 20px;
+}
+
+#cocteles span {
+    padding-left: 10px;
+}
+
+.descripcion {
+    font-size: 15px;
+    font-family: Alfa Slab One;
+    text-align: left;
+    display: flex;
+    padding-left: 10px;
+}
+
+.imagen_nosotros {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    image-resolution: calc(100vh - 80px);
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.texto_vision {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.texto_mision {
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.texto_valores {
+    position: absolute;
+    top: 80%;
+    left: 20px;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+#principal {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-image: url(img/cocktail-glass-with-ice-cubes-garnished-with-dried-lemon-and-fruit.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+}
+
+#principal div h1 {
+    font-size: 90px;
+    font-family: Neonderthaw;
+    color: rgb(255, 0, 0);
+
+}
+
+#principal div h1 span {
+    color: rgb(215, 182, 12);
+}
+
+#principal div p {
+    font-family: Alfa Slab One;
+    margin: 15px;
+    margin-bottom: 320px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(140, 36, 36, 0.59);
+    padding: 4px;
+}
+
+#principal button {
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: rgb(255, 0, 0);
+    padding: 1em;
+    border: 5px solid black;
+    border-radius: 30px;
+    border-style: ridge;
+}
+
+#principal button a {
+    font-family: Alfa Slab One;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+}
+
+#principal button a:hover {
+    color: black;
+}
+
+.call {
+    color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: calc(100vh - 80px);
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(140, 36, 36);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    padding: 20px;
+    height: 85px;
+}
+
+footer p {
+    float: left;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgba(245, 245, 245, 0.66);
+    height: fit-content;
+}
+
+footer i {
+    font-size: 25px;
+    letter-spacing: 25px;
+    color: rgba(245, 245, 245, 0.81);
+    float: right;
+}
