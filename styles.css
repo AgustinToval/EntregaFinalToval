@@ -218,7 +218,6 @@ header {
 }
 
 .imagen_contacto img {
-    display: inline-block;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
@@ -440,11 +439,11 @@ header {
 }
 
 .texto_contacto {
-    position: absolute;
     width: 40%;
     text-align: center;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .titulo_contacto {
