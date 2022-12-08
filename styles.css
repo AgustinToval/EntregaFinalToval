@@ -6,7 +6,7 @@
 
 header {
     background-color: rgb(140, 36, 36);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Alfa Slab One;
     color: whitesmoke;
     font-size: 22px;
     height: 80px;
@@ -78,6 +78,69 @@ header {
     text-align: center;
     border: 10px solid rgb(208, 208, 8);
     border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    align-items: center;
+    flex-direction: row;
+}
+
+.top_premium {
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    z-index: 2;
+    align-items: center;
+    position: absolute;
+}
+
+.top_premium h1 {
+    font-size: 60px;
+    font-family: Neonderthaw;
+    color: rgb(255, 255, 0);
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+.top_premium p {
+    font-size: 15px;
+    width: 300px;
+    color: #2e2e29;
+    text-shadow: 3px 3px 5px #ffffff;
+    font-family: Alfa Slab One;
+    text-transform: uppercase;
+}
+
+.bottom_premium {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+    text-align: center;
+    z-index: 2;
+    align-items: center;
+    position: absolute;
+}
+
+.bottom_premium h2 {
+    font-family: Alfa Slab One;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow:
+        8px 8px #c0b51e,
+        20px 20px #000000;
+}
+
+.boton_premium {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    align-items: flex-end;
 }
 
 .centrado {
@@ -224,7 +287,6 @@ header {
     height: 100%;
     width: 100%;
     background-size: cover;
-    padding: 5%;
     z-index: -1;
 }
 
@@ -249,9 +311,10 @@ header {
 
 .bloqueado {
     position: absolute;
-    width: 10%;
+    width: 50px;
     justify-content: center;
     display: flex;
+    margin: 90px;
 }
 
 .nombre_coctel {
@@ -262,6 +325,10 @@ header {
 }
 
 .caja {
+    padding-top: 20px;
+}
+
+.caja_bloqueada {
     padding-top: 20px;
 }
 
@@ -392,7 +459,6 @@ footer {
     text-align: center;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: capitalize;
     padding: 20px;
     height: 85px;
     display: flex;
