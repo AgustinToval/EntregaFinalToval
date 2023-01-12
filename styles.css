@@ -12,6 +12,9 @@ header {
   height: 80px;
   padding: 20px;
   border-bottom: solid black;
+  align-items: center;
+  box-shadow: 5px 0 10px black;
+  justify-content: space-between;
 }
 
 .imglogo {
@@ -43,31 +46,49 @@ header {
   text-decoration: solid #334;
 }
 
-.bar {
+.bar_items {
+  display: flex;
   float: right;
+  list-style: none;
 }
 
 .bar ul {
-  margin: 7px 0 0 0;
+  margin: 8px 0 0 0;
   letter-spacing: 1px;
 }
 
 .bar ul li {
-  list-style: none;
   display: inline-block;
 }
 
-.bar a {
+.bar_items li a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 16px;
-  margin: 0 3px;
+  font-size: 20px;
+  margin: 0 5px;
   transition: all 0.3s;
+  display: block;
 }
 
 .bar a:hover {
   color: rgb(252, 211, 7);
   text-decoration: solid #334;
+}
+
+.btn_menu {
+  padding: 9px 0 0 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.titulo_cocteles {
+  margin: 0;
+  font-size: 40px;
+  padding: 25px;
+  font-family: Alfa Slab One;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .imagen_premium {
@@ -179,32 +200,10 @@ header {
   z-index: -1;
 }
 
-.fondo_contacto::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.4;
-  background-image: url(img/fondo-cocteles.jpg);
-  color: #333;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  z-index: -1;
-}
-
-.imagenes_contacto {
-  padding-top: 35px;
+.sub {
+  font-family: Alfa Slab One;
+  font-size: 21px;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  gap: 0.8rem;
 }
 
 #contacto {
@@ -253,6 +252,7 @@ header {
   text-align: center;
   font-family: Alfa Slab One;
   margin: 0;
+  max-width: 100%;
 }
 
 .contenedor_mision {
@@ -260,6 +260,15 @@ header {
   float: calc(100vh - 80px);
   text-align: center;
   font-family: Alfa Slab One;
+  max-width: 100%;
+}
+
+.contenedor_valores {
+  color: rgb(0, 0, 0);
+  float: calc(100vh - 80px);
+  text-align: center;
+  font-family: Alfa Slab One;
+  max-width: 100%;
 }
 
 .caja_uno {
@@ -384,6 +393,10 @@ header {
   font-size: 20px;
 }
 
+#navbar-toggle {
+  display: none;
+}
+
 .imagen_nosotros {
   justify-content: center;
   display: flex;
@@ -447,33 +460,6 @@ header {
   word-spacing: 7px;
 }
 
-.texto_contacto {
-  width: 40%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-
-.titulo_contacto {
-  text-align: center;
-  font-family: Alfa Slab One;
-  padding-top: 25px;
-  color: rgb(140, 36, 36);
-  font-style: oblique;
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.redes_sociales i {
-  font-size: 100px;
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 200px;
-  color: rgb(0, 0, 0)
-}
-
 .tarjeta {
   display: inline-flex;
   flex-direction: column;
@@ -482,13 +468,14 @@ header {
   text-align: center;
   position: relative;
   z-index: 1;
-  min-width: 35rem;
+  min-width: 40rem;
   border-radius: 2rem;
+  max-height: 40rem;
   margin: 1rem;
   box-shadow: rgba(252, 211, 7, 0.4) -5px 5px, rgba(252, 211, 7, 0.3) -10px 10px, rgba(252, 211, 7, 0.2) -15px 15px, rgba(252, 211, 7, 0.1) -20px 20px, rgba(252, 211, 7, 0.05) -25px 25px;
 }
 
-.tarjeta img {
+.tarjeta_imagen {
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -508,7 +495,7 @@ header {
 
 .texto_tarjeta h1 {
   position: absolute;
-  height: 600px;
+  height: 350px;
   font-family: Alfa Slab One;
   font-size: 40px;
   color: hsla(0, 0%, 0%, .9);
@@ -517,46 +504,71 @@ header {
   animation: move linear 2000ms infinite;
 }
 
-.git {
-  padding-top: 200px;
-}
-
-.linkedin {
-  position: absolute;
-  margin-top: 300px;
-  font-size: 100px;
+.redes_sociales_block h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  font-family: Alfa Slab One;
   color: #000000;
+  font-size: 24px;
 }
 
-.github {
-  position: absolute;
-  font-size: 100px;
-  color: #000000;
-  margin-bottom: 100px;
+.redes_sociales a {
+  font-size: 60px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
-.qmmail {
-  margin-top: 500px;
+.redes_sociales {
+  display: flex;
+  justify-content: center;
+}
+
+.redes_sociales_white {
+  display: flex;
+  justify-content: center;
+}
+
+.redes_sociales_white a {
+  font-size: 60px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .mail {
-  margin-top: 100px;
-}
-
-.mail {
-  font-size: 100px;
-  color: #000000;
-}
-
-.phone {
+  font-size: 20px;
+  font-family: Alfa Slab One;
   color: black;
-  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
 }
 
-.wpp {
+.movil {
+  font-size: 60px;
+  text-decoration: none;
   color: black;
-  font-size: 30px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.numero {
+  font-size: 20px;
+  font-family: Alfa Slab One;
+  color: black;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
 }
 
 #principal {
@@ -598,6 +610,7 @@ header {
   border: 5px solid black;
   border-radius: 30px;
   border-style: ridge;
+  margin-bottom: 0px;
 }
 
 .call a {
@@ -623,8 +636,8 @@ header {
 }
 
 .call a:after,
-a:before {
-  width: 80px;
+.call a:before {
+  width: 50px;
   height: 200px;
   content: '';
   display: block;
@@ -666,6 +679,49 @@ a:hover:before {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: calc(100vh - 80px);
   text-align: center;
+}
+
+.size {
+  height: 300px;
+}
+
+.size_a {
+  width: 900px;
+  height: 600px;
+  justify-content: center;
+  display: flex;
+  justify-items: center;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.size_b {
+  font-size: 60px;
+}
+
+.color1 {
+  background-color: whitesmoke;
+}
+
+.color2 {
+  background-color: black;
+}
+
+.color3 {
+  background-color: rgb(152, 150, 150);
+}
+
+.color4 {
+  background-color: rgba(78, 74, 74, 0.822);
+}
+
+.color5 {
+  background-image: url(img/fondo\ negro.jpeg);
+  background-size: cover;
+}
+
+#white {
+  color: white;
 }
 
 footer {
@@ -757,11 +813,248 @@ footer i {
   }
 }
 
-.texto_tarjeta p {
-  font-size: 30px;
-  font-family: Alfa Slab One;
-  position: absolute;
-  width: 500px;
-  height: 300px;
-  text-align: center;
+@media only screen and (max-width: 1460px) {
+
+  .texto_mision {
+    left: 30%;
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 1288px) {
+  .texto_mision {
+    left: 30%;
+    width: 700px;
+    display: flex;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1052px) {
+  .texto_mision {
+    width: 600px;
+    display: flex;
+    font-size: 30px;
+  }
+}
+
+
+@media only screen and (max-width: 916px) {
+
+  .size_a {
+    height: 400px;
+    width: 700px;
+    margin-bottom: 70px;
+  }
+
+  .texto_mision {
+    width: 600px;
+    display: flex;
+    font-size: 30px;
+    left: 7rem;
+  }
+
+  .texto_vision {
+    font-size: 30px;
+    width: 500px;
+    display: flex;
+  }
+
+  .texto_valores {
+    font-size: 30px;
+    text-align: center;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 716px) {
+  .size_a {
+    height: 200px;
+    width: 500px;
+    margin-bottom: 160px;
+  }
+
+  .texto_mision {
+    width: 600px;
+    display: flex;
+    font-size: 30px;
+    left: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 517px) {
+
+  .size_a {
+    height: 100px;
+    width: 400px;
+    margin-bottom: 200px;
+  }
+
+  footer p {
+    font-size: 10px;
+    text-align: start;
+    width: 200px;
+    padding-top: 15px;
+  }
+
+  footer i {
+    font-size: 20px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+  .btn_menu {
+    display: flex;
+    justify-content: right;
+  }
+
+  .bar_items {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    top: -100vh;
+    transition: all .4s;
+    flex-direction: column;
+  }
+
+  .bar_items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+
+  .bar_items li:hover {
+    background: none;
+  }
+
+  .bar_items li a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #navbar-toggle:checked~.bar_items {
+    display: block;
+  }
+
+  footer {
+    height: 65px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+}
+
+
+
+section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+div.container {
+  transition: all .3s ease;
+}
+
+h1 {
+  margin: 15px 0 0 0;
+}
+
+h3 {
+  margin: 0 0 25px 0;
+}
+
+
+section.slide-option {
+  margin: 0 0 50px 0;
+}
+
+.no-marg {
+  margin: 0 0 0 0;
+}
+
+div.highway-slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+
+div.highway-barrier {
+  overflow: hidden;
+  position: relative;
+}
+
+ul.highway-lane {
+  display: flex;
+  height: 100%;
+}
+
+li.highway-car {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(22, 22, 23);
+  color: #6c6a6a;
+}
+
+@keyframes translatestf {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+@keyframes translateinfinite {
+  100% {
+    transform: translateX(calc(-180px * 12));
+  }
+}
+
+#infinite div.highway-barrier {
+  background: #fff;
+  box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
+}
+
+ul.highway-lane {
+  width: calc(180px * 24);
+}
+
+li.highway-car {
+  width: 180px;
+  animation: translateinfinite 5s linear infinite;
+}
+
+span.fab {
+  font-size: 65px;
+}
+
+#red {
+  background: #cb5454;
+}
+
+#orange {
+  background: #cb8054;
+}
+
+#yellow {
+  background: #cbba54;
+}
+
+#green {
+  background: #69b46e;
+}
+
+#blue {
+  background: #6091b0;
 }
