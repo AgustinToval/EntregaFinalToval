@@ -25,17 +25,23 @@
     <div class="logo"><a href="../index.html"><img class="imglogo" src="../img/Logo.png" alt="logo">Quick
         Mix</a></div>
     <nav class="bar">
-      <ul class="bar_items">
-        <li><a href="../pages/cocteles.html">Cocteles</a></li>
-        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-        <li><a href="../pages/contacto.html">Contacto</a></li>
-        <li><a href="../pages/premium.html">Premium</a></li>
-      </ul>
-      <span class="btn_menu">
-        <i class="fa fa-bars"></i>
-      </span>
+      <label class="toggle_button" for="navbar-toggle"><span class="btn_menu"> <i class="fa fa-bars"></i> </span>
+        <ul class="bar_items desktop-nav">
+          <li><a href="../pages/cocteles.html">Cocteles</a></li>
+          <li><a href="../pages/nosotros.html">Nosotros</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="../pages/premium.html">Premium</a></li>
+        </ul>
+      </label>
     </nav>
   </header>
+  <input type="checkbox" id="navbar-toggle" />
+  <ul class="bar_items bar mobile-nav">
+    <li><a href="../pages/cocteles.html">Cocteles</a></li>
+    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+    <li><a href="../pages/contacto.html">Contacto</a></li>
+    <li><a href="../pages/premium.html">Premium</a></li>
+  </ul>
 
   <main id="contacto">
     <div class="container-fluid color5">

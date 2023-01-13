@@ -50,6 +50,13 @@ header {
   display: flex;
   float: right;
   list-style: none;
+  font-family: Alfa Slab One;
+  justify-content: end;
+  margin-bottom: 0;
+}
+
+.bar {
+  text-align: right;
 }
 
 .bar ul {
@@ -718,6 +725,7 @@ a:hover:before {
 .color5 {
   background-image: url(img/fondo\ negro.jpeg);
   background-size: cover;
+  position: relative;
 }
 
 #white {
@@ -904,10 +912,18 @@ footer i {
 
 }
 
-
+.mobile-nav {
+  display: none;
+  position: relative;
+  z-index: 9999;
+}
 
 @media only screen and (max-width: 768px) {
 
+  .texto_vision {
+    font-size: 20px;
+    top: 20%;
+  }
 
   .btn_menu {
     display: flex;
@@ -915,16 +931,14 @@ footer i {
   }
 
   .bar_items {
-    position: fixed;
-    width: 100vw;
-    height: calc(100% - 65px);
-    top: -100vh;
-    transition: all .4s;
     flex-direction: column;
+    background-color: rgb(140, 36, 36);
+    text-align: center;
+    width: 100%;
   }
 
   .bar_items li {
-    margin: 30px 0 0 0;
+    margin: 15px 0 15px 0;
     line-height: 30px;
   }
 
@@ -935,6 +949,10 @@ footer i {
   .bar_items li a {
     font-size: 20px;
     font-weight: bold;
+  }
+
+  .desktop-nav {
+    display: none;
   }
 
   #navbar-toggle:checked~.bar_items {
@@ -959,7 +977,7 @@ section {
 }
 
 div.container {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 h1 {
@@ -969,7 +987,6 @@ h1 {
 h3 {
   margin: 0 0 25px 0;
 }
-
 
 section.slide-option {
   margin: 0 0 50px 0;
