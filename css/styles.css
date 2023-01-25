@@ -87,89 +87,83 @@ header {
   display: none;
 }
 
+.mobile_nav {
+  display: none;
+  position: relative;
+  z-index: 9999;
+}
+
 .titulo_cocteles {
   margin: 0;
-  font-size: 40px;
-  padding: 25px;
-  font-family: Alfa Slab One;
+  font-size: 70px;
+  padding: 20px;
+  font-family: Neonderthaw;
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
+  color: #000000;
+  text-shadow: 0px 0px 30px #000000;
 }
 
-.imagen_premium {
-  width: 45%;
-  justify-content: center;
+.contenedor_premium {
+  margin: auto;
+  justify-content: right;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  width: 500px;
+  display: flex;
+}
+
+.premium_box {
+  width: 500px;
+  background-image: url(../img/premium.png);
+  background-size: cover;
+  background-color: #b9c426;
+  height: 700px;
+  border-radius: 15px;
   display: flex;
   margin: auto;
-  text-align: center;
-  border: 10px solid rgb(208, 208, 8);
-  border-radius: 20px;
-  position: relative;
-  z-index: 1;
-  top: 0;
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
 }
 
-.top_premium {
-  top: 18%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 1.5;
-  color: rgb(0, 0, 0);
+.premium_box_text h1 {
   text-align: center;
-  z-index: 2;
-  align-items: center;
-  position: absolute;
-}
-
-.top_premium h1 {
-  font-size: 60px;
+  color: yellow;
   font-family: Neonderthaw;
-  color: rgb(255, 255, 0);
-  text-shadow: 2px 2px 5px #ffffff;
+  margin-top: 30px;
+  font-size: 70px;
+  text-shadow: 0 0 30px #fff;
 }
 
-.top_premium p {
-  font-size: 15px;
-  width: 300px;
-  color: #2e2e29;
-  text-shadow: 3px 3px 5px #ffffff;
+.premium_box_text p {
+  font-size: 20px;
   font-family: Alfa Slab One;
-  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 27px #fff;
+  margin-top: 20px;
 }
 
-.bottom_premium {
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 1.5;
-  text-align: center;
-  z-index: 2;
-  align-items: center;
-  position: absolute;
-}
-
-.bottom_premium h2 {
+.premium_box_text h2 {
+  justify-content: center;
+  display: flex;
+  margin-top: 250px;
+  font-size: 70px;
   font-family: Alfa Slab One;
-  font-size: 50px;
-  letter-spacing: 0.1em;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: white;
-  text-shadow: 8px 8px #c0b51e, 20px 20px #000000;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.801);
+  text-shadow: 0 1px 0 rgb(129, 129, 125), 0 2px 0 rgb(233, 218, 7), 0 3px 0 rgb(255, 230, 0), 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 .boton_premium {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  align-items: flex-end;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: yellow;
   border: none;
   margin-top: 120px;
-  width: 160px;
+  width: 170px;
   height: 40px;
   border-radius: 10px;
   cursor: pointer;
@@ -182,12 +176,6 @@ header {
   border: 1px solid white;
 }
 
-.centrado {
-  margin: auto;
-  justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
 .fondo_premium::before {
   content: '';
@@ -206,12 +194,6 @@ header {
   z-index: -1;
 }
 
-.sub {
-  font-family: Alfa Slab One;
-  font-size: 21px;
-  display: flex;
-}
-
 #contacto {
   position: relative;
 }
@@ -223,10 +205,6 @@ header {
 #nosotros {
   position: relative;
   font-family: Alfa Slab One;
-}
-
-.fondo_premium {
-  display: flex;
 }
 
 .fondo_nosotros::before {
@@ -299,6 +277,7 @@ header {
   display: flex;
   padding-left: 10px;
   max-width: 400px;
+  margin-right: 10px;
 }
 
 .cocteles {
@@ -411,50 +390,6 @@ header {
   text-shadow: #000000 10px 8px;
   letter-spacing: 2px;
   word-spacing: 7px;
-}
-
-.tarjeta {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  min-width: 40rem;
-  border-radius: 2rem;
-  max-height: 40rem;
-  margin: 1rem;
-  box-shadow: rgba(252, 211, 7, 0.4) -5px 5px, rgba(252, 211, 7, 0.3) -10px 10px, rgba(252, 211, 7, 0.2) -15px 15px, rgba(252, 211, 7, 0.1) -20px 20px, rgba(252, 211, 7, 0.05) -25px 25px;
-}
-
-.tarjeta_imagen {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 15px;
-  position: relative;
-}
-
-.texto_tarjeta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  z-index: 1;
-}
-
-.texto_tarjeta h1 {
-  position: absolute;
-  height: 350px;
-  font-family: Alfa Slab One;
-  font-size: 40px;
-  color: hsla(0, 0%, 0%, .9);
-  font: normal Varela Round, sans-serif;
-  text-transform: uppercase;
-  animation: move linear 2000ms infinite;
 }
 
 .redes_sociales_block h1 {
@@ -630,7 +565,6 @@ a:hover:before {
 .call {
   color: blanchedalmond;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  float: calc(100vh - 80px);
   text-align: center;
 }
 
@@ -698,11 +632,18 @@ footer p {
   height: fit-content;
 }
 
-footer i {
+footer a {
   font-size: 25px;
   letter-spacing: 25px;
   color: rgba(245, 245, 245, 0.81);
-  float: right;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.fa-brands {
+  width: 30px;
 }
 
 @keyframes move {
@@ -779,7 +720,6 @@ footer i {
   .texto_mision {
     left: 30%;
     width: 700px;
-    display: flex;
     font-size: 40px;
   }
 }
@@ -787,8 +727,19 @@ footer i {
 @media only screen and (max-width: 1052px) {
   .texto_mision {
     width: 600px;
-    display: flex;
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 985px) {
+
+  .cocteles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nombre_coctel {
+    width: 600px;
   }
 }
 
@@ -803,7 +754,6 @@ footer i {
 
   .texto_mision {
     width: 600px;
-    display: flex;
     font-size: 30px;
     left: 7rem;
   }
@@ -811,7 +761,6 @@ footer i {
   .texto_vision {
     font-size: 30px;
     width: 500px;
-    display: flex;
   }
 
   .texto_valores {
@@ -821,49 +770,6 @@ footer i {
   }
 }
 
-@media only screen and (max-width: 716px) {
-  .size_a {
-    height: 200px;
-    width: 500px;
-    margin-bottom: 160px;
-  }
-
-  .texto_mision {
-    width: 600px;
-    display: flex;
-    font-size: 30px;
-    left: 2rem;
-  }
-
-}
-
-@media only screen and (max-width: 517px) {
-
-  .size_a {
-    height: 100px;
-    width: 400px;
-    margin-bottom: 200px;
-  }
-
-  footer p {
-    font-size: 10px;
-    text-align: start;
-    width: 200px;
-    padding-top: 15px;
-  }
-
-  footer i {
-    font-size: 20px;
-  }
-
-}
-
-.mobile_nav {
-  display: none;
-  position: relative;
-  z-index: 9999;
-}
-
 @media only screen and (max-width: 768px) {
 
   header label {
@@ -871,9 +777,21 @@ footer i {
     padding: 20px;
   }
 
+  .texto_mision {
+    width: 600px;
+    font-size: 30px;
+    left: 2rem;
+  }
+
   .texto_vision {
-    font-size: 20px;
-    top: 20%;
+    font-size: 30px;
+    top: 10%;
+  }
+
+  .size_a {
+    height: 200px;
+    width: 500px;
+    margin-bottom: 160px;
   }
 
   .btn_menu {
@@ -886,6 +804,10 @@ footer i {
     background-color: rgb(140, 36, 36);
     text-align: center;
     width: 100%;
+  }
+
+  .mobile_nav {
+    margin-bottom: 0;
   }
 
   .bar_items li {
@@ -923,7 +845,200 @@ footer i {
   }
 }
 
+@media only screen and (max-width: 600px) {
 
+  .nombre_coctel {
+    width: 425px;
+  }
+}
+
+
+@media only screen and (max-width: 517px) {
+
+  .size_a {
+    height: 100px;
+    width: 400px;
+    margin-bottom: 200px;
+  }
+
+  footer p {
+    font-size: 10px;
+    text-align: start;
+    width: 200px;
+    padding-top: 15px;
+  }
+
+  footer i {
+    font-size: 20px;
+  }
+
+  .premium_box {
+    width: 350px;
+    height: 500px;
+    margin: auto;
+  }
+
+  .contenedor_premium {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .premium_box_text p {
+    font-size: 15px;
+  }
+
+  .premium_box_text h2 {
+    font-size: 60px;
+    margin-top: 160px;
+  }
+
+  .premium_box_text button {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .texto_mision {
+    width: 300px;
+    font-size: 15px;
+  }
+
+  .texto_vision {
+    width: 300px;
+    font-size: 15px;
+    top: 10%;
+  }
+
+  .texto_valores {
+    width: 300px;
+    font-size: 15px;
+  }
+
+  .call a {
+    justify-content: center;
+    bottom: 200px;
+  }
+
+  footer a {
+    letter-spacing: 10px;
+  }
+
+  .cocteles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nombre_coctel {
+    width: 370px;
+
+  }
+
+  .coctel_foto {
+    width: 100px;
+  }
+
+  .coctel_foto_bloqueada {
+    width: 100px;
+  }
+
+  .bloqueado {
+    margin: 45px;
+  }
+
+  .caja {
+    width: 400px;
+  }
+
+}
+
+
+@media only screen and (max-width: 376px) {
+
+  .size_a {
+    margin: 0;
+    height: 200px;
+    width: 350px;
+    margin-bottom: 50px;
+  }
+
+  #infinite {
+    width: 370px;
+    height: 70px;
+    margin-top: 10px;
+  }
+
+  .cocteles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nombre_coctel {
+    width: 310px;
+
+  }
+
+  .coctel_foto {
+    width: 120px;
+    margin: 10px;
+  }
+
+  .coctel_foto_bloqueada {
+    width: 120px;
+  }
+
+  .bloqueado {
+    margin: 45px;
+  }
+
+  .caja {
+    width: 300px;
+  }
+
+  .caja h1 {
+    font-size: 15px;
+  }
+
+  .caja p {
+    font-size: 12px;
+  }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+  header {
+    width: 100%;
+  }
+
+  .texto_vision {
+    width: 240px;
+    font-size: 13px;
+  }
+
+  .texto_mision {
+    width: 250px;
+    font-size: 13px;
+    top: 38%;
+  }
+
+  .toggle_button {
+    padding: 20px 0 0 0;
+  }
+
+  .size_a {
+    margin: 0;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  #infinite {
+    width: 315px;
+    height: 70px;
+    margin-top: 10px;
+  }
+}
 
 section {
   display: flex;
@@ -994,7 +1109,6 @@ li.highway-car {
 }
 
 #infinite div.highway-barrier {
-  background: #fff;
   box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
 }
 

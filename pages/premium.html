@@ -19,17 +19,21 @@
 
 <body>
     <header class="encabezado">
-        <div class="logo"><a href="../index.html"><img class="imglogo" src="../img/Logo.png" alt="logo">Quick
-                Mix</a></div>
         <nav class="bar">
-            <label class="toggle_button" for="navbar_toggle"><span class="btn_menu"> <i class="fa fa-bars"></i> </span>
-                <ul class="bar_items desktop_nav">
-                    <li><a href="../pages/cocteles.html">Cocteles</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                    <li><a href="../pages/premium.html">Premium</a></li>
-                </ul>
+            <div class="logo">
+                <a href="../index.html"><img class="imglogo" src="../img/Logo.png" alt="logo">Quick Mix</a>
+            </div>
+            <label class="toggle_button" for="navbar_toggle"><span class="btn_menu"><i class="fa fa-bars"></i>
+                </span>
+                <div class="desktop">
+                    <ul class="bar_items desktop_nav">
+                        <li><a href="../pages/cocteles.html">Cocteles</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                        <li><a href="../pages/premium.html">Premium</a></li>
+                    </ul>
             </label>
+            </div>
         </nav>
     </header>
     <input type="checkbox" id="navbar_toggle" />
@@ -41,17 +45,14 @@
     </ul>
     <main id="premium">
         <div class="fondo_premium">
-            <div class="centrado">
-                <img class="imagen_premium" src="../img/premium.png" alt="premium" />
-
-                <div class="top_premium">
-                    <h1>Premium</h1>
-                    <p>Disfruta de todo el contenido de QuickMix</p>
-                </div>
-
-                <div class="bottom_premium">
-                    <h2>$10.00</h2>
-                    <button class="boton_premium">Hacerse Premium</button>
+            <div class="contenedor_premium">
+                <div class="premium_box">
+                    <div class="premium_box_text">
+                        <h1>Premium</h1>
+                        <p>Disfruta de todo el contenido de QuickMix</p>
+                        <h2>$10.00</h2>
+                        <button class="boton_premium">Hacerse Premium</button>
+                    </div>
                 </div>
             </div>
         </div>
