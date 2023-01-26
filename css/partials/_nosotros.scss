@@ -1,0 +1,180 @@
+#nosotros {
+    position: relative;
+    font-family: $fuente1;
+}
+
+// fondo
+
+.fondo_nosotros::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background-image: url(img/fondo-cocteles.jpg);
+    color: #333;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+// imagen
+
+.imagen_nosotros {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    image-resolution: calc(100vh - 80px);
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+// textos
+
+.texto_vision {
+    position: absolute;
+    top: 7%;
+    left: 20px;
+    width: 700px;
+    color: whitesmoke;
+    text-align: left;
+    font-size: 50px;
+    font-style: oblique;
+    text-shadow: #000000 10px 8px;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+
+.texto_mision {
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: right;
+    width: 700px;
+    font-size: 50px;
+    font-style: oblique;
+    text-shadow: #000000 10px 8px;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    text-align: initial;
+}
+
+.texto_valores {
+    position: absolute;
+    top: 80%;
+    left: 20px;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: right;
+    width: 700px;
+    font-size: 50px;
+    font-style: oblique;
+    text-shadow: #000000 10px 8px;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+
+// @media
+
+@media only screen and (max-width: 1460px) {
+
+    .texto_mision {
+        left: 30%;
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 1288px) {
+    .texto_mision {
+        left: 30%;
+        width: 700px;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1052px) {
+    .texto_mision {
+        width: 600px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 916px) {
+
+    .texto_mision {
+        width: 600px;
+        font-size: 30px;
+        left: 7rem;
+    }
+
+    .texto_vision {
+        font-size: 30px;
+        width: 500px;
+    }
+
+    .texto_valores {
+        font-size: 30px;
+        text-align: center;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .texto_mision {
+        width: 600px;
+        font-size: 30px;
+        left: 2rem;
+    }
+
+    .texto_vision {
+        font-size: 30px;
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .texto_mision {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .texto_vision {
+        width: 300px;
+        font-size: 15px;
+        top: 10%;
+    }
+
+    .texto_valores {
+        width: 300px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .texto_vision {
+        width: 240px;
+        font-size: 13px;
+    }
+
+    .texto_mision {
+        width: 250px;
+        font-size: 13px;
+        top: 38%;
+    }
+}

@@ -1,0 +1,65 @@
+// footer y redes
+
+footer {
+    background-color: $color1;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & p {
+        font-size: 15px;
+        color: rgba(245, 245, 245, 0.66);
+        height: fit-content;
+    }
+
+    & a {
+        font-size: 25px;
+        letter-spacing: 25px;
+        color: rgba(245, 245, 245, 0.81);
+        text-decoration: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+            color: $color2;
+            transition: 0.5s;
+        }
+    }
+}
+
+.fa-brands {
+    width: 30px;
+}
+
+// @media
+
+@media only screen and (max-width: 517px) {
+
+    footer {
+
+        & p {
+            font-size: 10px;
+            text-align: start;
+            width: 200px;
+            padding-top: 15px;
+        }
+
+        & i {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 426px) {
+
+    footer a {
+        letter-spacing: 10px;
+    }
+}
