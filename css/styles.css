@@ -153,8 +153,8 @@ footer {
   text-align: center;
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px;
   height: 65px;
+  padding: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -173,7 +173,6 @@ footer a {
   text-decoration: none;
   display: inline-block;
   margin: 0;
-  padding: 0;
 }
 footer a:hover {
   color: rgb(215, 182, 12);
@@ -320,7 +319,6 @@ footer a:hover {
   width: 500px;
   background-image: url(../img/premium.png);
   background-size: cover;
-  background-color: #b9c426;
   height: 700px;
   border-radius: 15px;
   display: flex;
@@ -394,8 +392,10 @@ footer a:hover {
 @media only screen and (max-width: 517px) {
   .premium_box {
     width: 350px;
-    height: 500px;
     margin: auto;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .contenedor_premium {
     margin: 0px;
