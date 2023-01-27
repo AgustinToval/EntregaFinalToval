@@ -10,6 +10,12 @@ body {
   overflow-x: hidden !important;
 }
 
+@media only screen and (max-heigh: 760px) {
+  html,
+body {
+    max-height: 750px;
+  }
+}
 header {
   background-color: rgb(140, 36, 36);
   font-family: Alfa Slab One;
