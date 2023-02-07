@@ -404,6 +404,10 @@
         margin: 10px;
     }
 
+    .descripcion {
+        width: 150px;
+    }
+
     .coctel_foto_bloqueada {
         width: 120px;
     }
@@ -419,8 +423,20 @@
             font-size: 15px;
         }
 
+        & h2 {
+            font-size: 15px;
+        }
+
         & p {
             font-size: 12px;
+        }
+
+    }
+
+    .contenedor_descripcion_receta {
+
+        & h2 {
+            font-size: 55px;
         }
     }
 }

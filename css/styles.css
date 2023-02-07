@@ -951,6 +951,9 @@ footer a:hover {
     width: 120px;
     margin: 10px;
   }
+  .descripcion {
+    width: 150px;
+  }
   .coctel_foto_bloqueada {
     width: 120px;
   }
@@ -963,8 +966,14 @@ footer a:hover {
   .caja h1 {
     font-size: 15px;
   }
+  .caja h2 {
+    font-size: 15px;
+  }
   .caja p {
     font-size: 12px;
+  }
+  .contenedor_descripcion_receta h2 {
+    font-size: 55px;
   }
 }
 #contacto {
