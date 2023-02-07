@@ -153,11 +153,12 @@ footer {
   text-align: center;
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 65px;
+  height: 75px;
   padding: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
 }
 footer p {
   font-size: 15px;
@@ -351,6 +352,9 @@ footer a:hover {
   text-align: left;
   color: rgba(0, 0, 0, 0.801);
   text-shadow: 0 1px 0 rgb(129, 129, 125), 0 2px 0 rgb(233, 218, 7), 0 3px 0 rgb(255, 230, 0), 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.premium_box_text a {
+  text-decoration: none;
 }
 
 .boton_premium {
@@ -546,6 +550,26 @@ footer a:hover {
     padding-right: 0;
   }
 }
+@media only screen and (max-width: 633px) {
+  .texto_mision {
+    font-size: 20px;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .texto_vision {
+    font-size: 15px;
+    width: 400px;
+  }
+  .texto_mision {
+    font-size: 15px;
+    width: 400px;
+  }
+  .texto_valores {
+    font-size: 20px;
+    width: 400px;
+  }
+}
 @media only screen and (max-width: 426px) {
   .texto_mision {
     width: 300px;
@@ -646,7 +670,7 @@ footer a:hover {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.cocteles h1 {
+.cocteles h2 {
   padding-left: 10px;
   font-size: 20px;
 }
@@ -668,6 +692,135 @@ footer a:hover {
 
 .caja {
   padding-top: 20px;
+}
+
+.boton_cocteles {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.contenedor_receta {
+  display: flex;
+  justify-content: center;
+}
+
+.divisor {
+  height: 10px;
+  width: 100%;
+  margin: auto;
+  border: 2px black;
+  background-image: url(/img/fondo\ negro.jpeg);
+}
+
+.divisor1 {
+  border: none;
+  border-left: 1px solid hsl(200deg, 10%, 50%);
+  height: 300px;
+  width: 1px;
+}
+
+.imagen_receta {
+  width: 400px;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: rgb(140, 36, 36);
+}
+
+.contenedor_descripcion_receta {
+  display: flex;
+  font-size: 25px;
+  background-color: black;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+}
+.contenedor_descripcion_receta h2 {
+  font-size: 80px;
+  font-family: Neonderthaw;
+  display: flex;
+  justify-content: center;
+  color: rgb(215, 182, 12);
+  padding-top: 20px;
+  text-shadow: 0px 3px 20px rgb(140, 36, 36);
+}
+.contenedor_descripcion_receta p {
+  font-size: 30px;
+  text-align: center;
+  justify-items: end;
+  font-family: Alfa Slab One;
+  margin-top: 10%;
+  color: white;
+  padding: 20px;
+}
+
+.contenedor_texto_receta {
+  height: 50%;
+  width: 100%;
+  background-color: rgb(212, 208, 208);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.contenedor_texto_receta h2 {
+  font-family: Alfa Slab One;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  color: black;
+}
+
+.receta_ingredientes ul {
+  font-size: 25px;
+  font-family: Alfa Slab One;
+  margin: 20px;
+  text-transform: capitalize;
+  list-style: disc;
+}
+.receta_ingredientes li {
+  margin-top: 10px;
+}
+
+.receta_pasos {
+  display: flex;
+  justify-items: left;
+}
+.receta_pasos h3 {
+  font-size: 25px;
+  font-family: Alfa Slab One;
+  margin: 20px;
+  text-transform: capitalize;
+  margin: auto;
+  justify-content: start;
+}
+.receta_pasos p {
+  font-family: Alfa Slab One;
+  font-size: 20px;
+  margin: 15px;
+  max-width: 700px;
+}
+
+.load {
+  margin: 0;
+  height: 100vh;
+  background-color: #2b2b2b;
+}
+
+.load_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.load_image h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: #e2b68a;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 985px) {
@@ -737,7 +890,7 @@ footer a:hover {
   position: relative;
 }
 
-.redes_sociales_block h1 {
+.redes_sociales_block h2 {
   text-align: center;
   text-transform: uppercase;
   padding: 20px;

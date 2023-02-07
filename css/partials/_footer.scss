@@ -6,11 +6,12 @@ footer {
     text-align: center;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 65px;
+    height: 75px;
     padding: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 
     & p {
         font-size: 15px;

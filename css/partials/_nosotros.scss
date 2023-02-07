@@ -152,6 +152,33 @@
     }
 }
 
+@media only screen and (max-width: 633px) {
+
+    .texto_mision {
+        font-size: 20px;
+        width: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 535px) {
+
+    .texto_vision {
+        font-size: 15px;
+        width: 400px;
+    }
+
+    .texto_mision {
+        font-size: 15px;
+        width: 400px;
+    }
+
+    .texto_valores {
+        font-size: 20px;
+        width: 400px;
+    }
+}
+
 @media only screen and (max-width: 426px) {
     .texto_mision {
         width: 300px;
