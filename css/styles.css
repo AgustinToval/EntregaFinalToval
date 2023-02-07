@@ -10,6 +10,22 @@ body {
   overflow-x: hidden !important;
 }
 
+body {
+  cursor: url(/img/cursor.png), auto;
+}
+
+a {
+  cursor: url(/img/pointer.png), auto !important;
+}
+
+ul {
+  cursor: url(/img/cursor.png), auto;
+}
+
+button {
+  cursor: url(/img/cursor.png), auto;
+}
+
 @media only screen and (max-heigh: 760px) {
   html,
 body {
@@ -180,6 +196,10 @@ footer a:hover {
   transition: 0.5s;
 }
 
+.redes {
+  cursor: url(/img/cursor.png), auto;
+}
+
 .fa-brands {
   width: 30px;
 }
@@ -226,6 +246,10 @@ footer a:hover {
   color: rgb(255, 255, 255);
   background-color: rgba(140, 36, 36, 0.59);
   padding: 4px;
+}
+
+.atajo {
+  cursor: url(/img/cursor.png), auto;
 }
 
 .call {
@@ -371,6 +395,7 @@ footer a:hover {
   cursor: pointer;
   transition: all 1s;
   font-family: Alfa Slab One;
+  cursor: url(/img/pointer.png), auto !important;
 }
 .boton_premium:hover {
   box-shadow: white 0 0 100px, white 0 0 100px, white 0 0 100px;
@@ -831,10 +856,63 @@ footer a:hover {
   .nombre_coctel {
     width: 600px;
   }
+  .contenedor_descripcion_receta {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor_descripcion_receta p {
+    margin-top: 30px;
+  }
+  .imagen_receta {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .contenedor_texto_receta h2 {
+    font-size: 25px;
+    margin: 20px;
+  }
+  .contenedor_texto_receta ul {
+    font-size: 16px;
+  }
+  .contenedor_texto_receta h3 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .contenedor_texto_receta p {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .nombre_coctel {
     width: 425px;
+  }
+  .contenedor_descripcion_receta h2 {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .contenedor_descripcion_receta p {
+    font-size: 25px;
+  }
+  .contenedor_texto_receta h2 {
+    font-size: 20px;
+  }
+  .contenedor_texto_receta ul {
+    font-size: 15px;
+  }
+  .contenedor_texto_receta h3 {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .contenedor_texto_receta p {
+    font-size: 15px;
+  }
+  .imagen_receta {
+    width: 250px;
   }
 }
 @media only screen and (max-width: 426px) {
@@ -844,6 +922,9 @@ footer a:hover {
   }
   .nombre_coctel {
     width: 370px;
+  }
+  .descripcion {
+    width: 220px;
   }
   .coctel_foto {
     width: 100px;
@@ -993,6 +1074,14 @@ footer a:hover {
   background-image: url(../img/fondo\ negro.jpeg);
   background-size: cover;
   position: relative;
+}
+
+.carousel-control-next {
+  cursor: url(/img/pointer.png), auto;
+}
+
+.carousel-control-prev {
+  cursor: url(/img/pointer.png), auto;
 }
 
 #white {

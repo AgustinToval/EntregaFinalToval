@@ -10,6 +10,24 @@ body {
     overflow-x: hidden !important;
 }
 
+body {
+    cursor: url(/img/cursor.png), auto;
+}
+
+a {
+    cursor: url(/img/pointer.png), auto !important;
+}
+
+ul {
+    cursor: url(/img/cursor.png), auto;
+}
+
+button {
+    cursor: url(/img/cursor.png), auto;
+}
+
+
+
 @media only screen and (max-heigh: 760px) {
 
     html,

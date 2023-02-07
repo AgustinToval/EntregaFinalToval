@@ -269,6 +269,44 @@
     .nombre_coctel {
         width: 600px;
     }
+
+    .contenedor_descripcion_receta {
+        display: flex;
+        flex-direction: column;
+
+        & p {
+            margin-top: 30px;
+        }
+    }
+
+    .imagen_receta {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .contenedor_texto_receta {
+
+        & h2 {
+            font-size: 25px;
+            margin: 20px;
+        }
+
+        & ul {
+            font-size: 16px;
+        }
+
+        & h3 {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        & p {
+            font-size: 15px;
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -276,7 +314,46 @@
     .nombre_coctel {
         width: 425px;
     }
+
+    .contenedor_descripcion_receta {
+
+        & h2 {
+            font-size: 70px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        & p {
+            font-size: 25px;
+        }
+    }
+
+    .contenedor_texto_receta {
+
+        & h2 {
+            font-size: 20px;
+        }
+
+        & ul {
+            font-size: 15px;
+        }
+
+        & h3 {
+            font-size: 15px;
+            margin-left: 15px;
+        }
+
+        & p {
+            font-size: 15px;
+        }
+    }
+
+    .imagen_receta {
+        width: 250px;
+    }
 }
+
 
 @media only screen and (max-width: 426px) {
 
@@ -287,7 +364,10 @@
 
     .nombre_coctel {
         width: 370px;
+    }
 
+    .descripcion {
+        width: 220px;
     }
 
     .coctel_foto {

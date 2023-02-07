@@ -118,6 +118,14 @@
     position: relative;
 }
 
+.carousel-control-next {
+    cursor: url(/img/pointer.png), auto;
+}
+
+.carousel-control-prev {
+    cursor: url(/img/pointer.png), auto;
+}
+
 #white {
     color: white;
 }
