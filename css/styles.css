@@ -28,7 +28,7 @@ button {
 
 @media only screen and (max-heigh: 760px) {
   html,
-body {
+  body {
     max-height: 750px;
   }
 }
@@ -59,7 +59,6 @@ header {
   font-family: Alfa Slab One;
   display: flex;
   padding: 18px;
-  align-items: center;
   min-width: 280px;
 }
 .logo a {
@@ -179,7 +178,6 @@ footer {
 footer p {
   font-size: 15px;
   color: rgba(245, 245, 245, 0.66);
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -197,7 +195,7 @@ footer a:hover {
 }
 
 .redes {
-  cursor: url(/img/cursor.png), auto;
+  cursor: url(/img/cursor.png), auto !important;
 }
 
 .fa-brands {
@@ -1097,24 +1095,6 @@ footer a:hover {
   color: white;
 }
 
-@-webkit-keyframes move {
-  0% {
-    text-shadow: 4px -4px 0 rgb(227, 193, 24), 3px -3px 0 rgb(227, 193, 24), 2px -2px 0 rgb(227, 193, 24), 1px -1px 0 rgb(227, 193, 24), -4px 4px 0 rgb(255, 255, 255), -3px 3px 0 rgb(255, 255, 255), -2px 2px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
-  }
-  25% {
-    text-shadow: -4px -4px 0 rgb(255, 255, 255), -3px -3px 0 rgb(255, 255, 255), -2px -2px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255), 4px 4px 0 rgb(227, 193, 24), 3px 3px 0 rgb(227, 193, 24), 2px 2px 0 rgb(227, 193, 24), 1px 1px 0 rgb(227, 193, 24);
-  }
-  50% {
-    text-shadow: -4px 4px 0 rgb(227, 193, 24), -3px 3px 0 rgb(227, 193, 24), -2px 2px 0 rgb(227, 193, 24), -1px 1px 0 rgb(227, 193, 24), 4px -4px 0 rgb(255, 255, 255), 3px -3px 0 rgb(255, 255, 255), 2px -2px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255);
-  }
-  75% {
-    text-shadow: 4px 4px 0 rgb(255, 255, 255), 3px 3px 0 rgb(255, 255, 255), 2px 2px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), -4px -4px 0 rgb(227, 193, 24), -3px -3px 0 rgb(227, 193, 24), -2px -2px 0 rgb(227, 193, 24), -1px -1px 0 rgb(227, 193, 24);
-  }
-  100% {
-    text-shadow: 4px -4px 0 rgb(227, 193, 24), 3px -3px 0 rgb(227, 193, 24), 2px -2px 0 rgb(227, 193, 24), 1px -1px 0 rgb(227, 193, 24), -4px 4px 0 rgb(255, 255, 255), -3px 3px 0 rgb(255, 255, 255), -2px 2px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
-  }
-}
-
 @keyframes move {
   0% {
     text-shadow: 4px -4px 0 rgb(227, 193, 24), 3px -3px 0 rgb(227, 193, 24), 2px -2px 0 rgb(227, 193, 24), 1px -1px 0 rgb(227, 193, 24), -4px 4px 0 rgb(255, 255, 255), -3px 3px 0 rgb(255, 255, 255), -2px 2px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255);
@@ -1180,26 +1160,12 @@ li.highway-car {
   color: #6c6a6a;
 }
 
-@-webkit-keyframes translatestf {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-500%);
-  }
-}
-
 @keyframes translatestf {
   0% {
     transform: translateX(100%);
   }
   100% {
     transform: translateX(-500%);
-  }
-}
-@-webkit-keyframes translateinfinite {
-  100% {
-    transform: translateX(-2160px);
   }
 }
 @keyframes translateinfinite {
@@ -1217,8 +1183,7 @@ ul.highway-lane {
 
 li.highway-car {
   width: 180px;
-  -webkit-animation: translateinfinite 5s linear infinite;
-          animation: translateinfinite 5s linear infinite;
+  animation: translateinfinite 5s linear infinite;
 }
 
 span.fab {
